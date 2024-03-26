@@ -45,7 +45,15 @@
 
 
 ```python
+i = int(input("Digite un número entre 2 y 50: "))
 
+if i < 2 or i > 50:
+    print("El número digitado es inválido")
+else:
+    print(f"Divisores de {i}:")
+    for n in range(1, i + 1):
+        if i % n == 0:
+            print(n)
 ```
 8. Implementar el algoritmo que muestre los números primos del 1 al 100. Nota: use funciones
 
