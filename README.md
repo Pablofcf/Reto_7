@@ -9,7 +9,14 @@ while i <= 100:
     i += 1
 ```
 ```mermaid
-
+flowchart TD
+    A[Inicio] --> B[Inicialización: i = 1]
+    B --> C{¿i <= 100?}
+    C -- Sí --> D[Calcula cuadrado: cuadrado = i ** 2]
+    D --> E[Imprime 'El cuadrado de i es cuadrado']
+    E --> F[Incrementa i: i += 1]
+    F --> C
+    C -- No --> G[Fin]
 ```
 2. Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 
