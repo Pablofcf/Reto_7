@@ -24,7 +24,13 @@ while x <= 1000:
 print("Ciclo terminado")
 ```
 ```mermaid
-
+flowchart TD;
+    A(Inicio) --> B[Determinar si un número es par o impar en la
+    siguiente lista comprendida...]; 
+    B --> C; C[X <= 1000]--> E; E{X % 2 == 0} -- Sí --> 
+    F[X es par]; E -- No --> G[X = X+1]; 
+    G --> C
+    F --> H; H(Fin)
 ```
 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 
